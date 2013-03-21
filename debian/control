@@ -1,0 +1,22 @@
+Source: librest-client-perl
+Section: perl
+Priority: optional
+Maintainer: Jonas Genannt <jonas.genannt@capi2name.de>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: libcrypt-ssleay-perl,
+ liburi-perl,
+ libwww-perl,
+ perl,
+ perl-modules (>= 6.42)
+Standards-Version: 3.9.2
+Homepage: http://search.cpan.org/dist/REST-Client/
+
+Package: librest-client-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ libcrypt-ssleay-perl,
+ liburi-perl,
+ libwww-perl,
+ perl
+Description: A simple client for interacting with RESTful http/https resources
+ REST::Client provides a simple way to interact with HTTP RESTful resources.
